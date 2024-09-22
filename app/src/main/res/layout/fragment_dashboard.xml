@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        tools:ignore="MissingConstraints">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center">
+            <ImageView
+                android:layout_width="276dp"
+                android:layout_height="104dp"
+                android:src="@drawable/logo_color_w"
+                android:scaleType="centerCrop">
+
+            </ImageView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:textAlignment="center"
+                android:text="倍率请直接输入百分数，无需带分号"
+                ></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/vomain"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:checked="true"
+                    android:gravity="center"
+                    tools:ignore="TouchTargetSizeCheck">
+
+                </RadioButton>
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ume">
+
+                </ImageView>
+
+                <EditText
+                    android:id="@+id/vo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="输入vo数值"
+                    android:minHeight="48dp" />
+
+                <EditText
+                    android:id="@+id/vo_per"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="输入vo倍率"
+                    android:minHeight="48dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/damain"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    tools:ignore="TouchTargetSizeCheck">
+
+                </RadioButton>
+                <ImageView
+                    android:src="@drawable/hty"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="10dp"
+                    >
+
+                </ImageView>
+                <EditText
+                    android:id="@+id/da"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="输入da数值"
+                    android:background="@drawable/rounded_edittext2"
+                    android:minHeight="48dp"
+                    android:layout_marginTop="10dp"/>
+                <EditText
+                    android:id="@+id/da_per"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="输入da倍率"
+                    android:background="@drawable/rounded_edittext2"
+                    android:minHeight="48dp"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/vimain"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    tools:ignore="TouchTargetSizeCheck">
+
+                </RadioButton>
+                <ImageView
+                    android:src="@drawable/snm2"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="10dp"
+                    >
+
+                </ImageView>
+                <EditText
+                    android:id="@+id/vi"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content"
+                    android:hint="输入vi数值"
+                    android:layout_weight="1"
+                    android:minHeight="48dp"
+                    android:background="@drawable/rounded_edittext3"
+                    android:layout_marginTop="10dp"/>
+                <EditText
+                    android:id="@+id/vi_per"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content"
+                    android:hint="输入vi倍率"
+                    android:minHeight="48dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_edittext3"
+                    android:layout_marginTop="10dp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/voplus"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/rounded_edittext4"
+                    android:layout_weight="1"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="vo数值">
+                </TextView>
+                <TextView
+                    android:id="@+id/daplus"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/rounded_edittext4"
+                    android:layout_weight="1"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="da数值">
+                </TextView>
+                <TextView
+                    android:id="@+id/viplus"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/rounded_edittext4"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:hint="vi数值">
+                </TextView>
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/totalproperty"
+                android:layout_width="120dp"
+                android:layout_height="48dp"
+                android:paddingTop="20dp"
+                android:textAlignment="center"
+                android:hint="属性和"></TextView>
+
+            <RelativeLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_gravity="center"
+                android:clipChildren="false"> <!-- 允许子视图超出父布局 -->
+
+
+                <!-- 按钮部分，放在图片的右下方，通过 margin 来调整位置 -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/putout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="计算"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="10dp"
+                    app:backgroundTint="@null"
+                    app:backgroundTintMode="screen"
+
+                    android:background="@drawable/btn1"
+                    />
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/msz" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clipChildren="false"> <!-- 允许子视图超出父布局 -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/reset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:background="@drawable/btn1"
+                    android:text="重置"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="10dp"
+                    app:backgroundTint="@null"
+                    app:backgroundTintMode="screen"
+                    />
+
+                <ImageView
+                    android:id="@+id/image2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/tml2"
+                    android:layout_marginBottom="75dp"
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
